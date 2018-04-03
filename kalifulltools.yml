@@ -1,7 +1,9 @@
 FROM kalilinux/kali-linux-docker
-MAINTAINER N.Q.Trung
 RUN echo "deb http://archive-7.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list && \
     echo "deb-src http://archive-7.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 
-RUN apt-get -y update&&apt-get -y upgrade &&apt-get -y install kali-linux-all&&apt-get -y install nano&&apt-get -y install git
+RUN apt-get -y update
+Run apt-get -y upgrade
+Run apt-get -y install kali-linux-all
+Run apt-get -y install nano
 CMD ["bash"]
